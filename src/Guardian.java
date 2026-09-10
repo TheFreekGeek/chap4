@@ -11,12 +11,9 @@ public class Guardian {
     }
 
     void newRating(int inRating) {
-        if (inRating > 0) {
-            rating = inRating;
-        }
-        else {
-            System.out.println("Please provide a valid number.");
-        }
+            if (inRating > 0) {
+                rating = inRating;
+            }
     }
 
     int showRating() {
