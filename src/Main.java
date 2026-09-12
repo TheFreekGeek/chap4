@@ -56,18 +56,53 @@ void main() {
 
 
         System.out.println(" ");
-
-        System.out.println("Your legendary Guardians are:");
+        System.out.println(roster[0].showName() + " and " + roster[1].showName() + " will battle!");
+        roster[0].clash(roster[1]);
+/*
+        System.out.println("Your Guardians for battle");
 
         for(int x = 0; x < 4;){
                 if (roster[x].showRating() > 100) {
-                        System.out.println(roster[x].showName());
+                        System.out.println((x+1) + ". The Legendary " + roster[x].showName());
                         x ++;
                 }
                 else {
+                        System.out.println((x+1) + ". " + roster[x].showName());
                         x ++;
                 }
                 }
+        System.out.println("First Guardian:");
+        String guard1 = myObj.next();
+        System.out.println("Second Guardian:");
+        String guard2 = myObj.next();
+        //System.out.println(guard1);
+        //System.out.println(guard2);
+
+        int opp = 0;
+
+        if (guard2.equals("1")) {
+                opp = roster[0].showRating();
+        }
+        else if (guard2.equals("2")) {
+                opp = roster[1].showRating();
+        }
+        else if (guard2.equals("3")) {
+                opp = roster[2].showRating();
+        }
+        else if (guard2.equals("4")) {
+                opp = roster[3].showRating();
+        }
+        System.out.println(opp);
+
+        /* String fighter1;
+        String fighter2;
+        fighter1 = myObj.next();
+        System.out.println("Second Guardian:");
+        fighter2 = myObj.next();
+
+
+         */
+        //switch ()
 
         //for (boolean legend : roster[])
 

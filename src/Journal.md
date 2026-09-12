@@ -8,3 +8,6 @@ Set instance variables to private. Broke all links from main to the object's var
 
 Phase 3
 Moved Guardian instantiation to an array. Built a for loop to check for legendary status. Print list of Legendary guardians. If legendary was a variable it would need checked again every time the rating changed. Whereas doing in code makes it all part of the program. Storing computed data risks data becoming out of date.
+
+Phase 4
+The clash method can access the private fields because they are private to the class, not the object. I think it would be beneficial either way, using the variable or the method, depending on the rest of the program. But I do feel that the clash method should exist in the main code.

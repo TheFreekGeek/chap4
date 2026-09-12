@@ -16,6 +16,7 @@ public class Guardian {
             }
     }
 
+
     int showRating() {
         return rating;
     }
@@ -27,5 +28,18 @@ public class Guardian {
         else {
             return false;
         }
+    }
+
+    public void clash(Guardian opponent){
+        if (rating > opponent.rating){
+            System.out.println(showName() + " Wins!");
+        }
+        else if (showRating() == opponent.showRating()) {
+            System.out.println("The guardians have tied in battle.");
+        }
+        else {
+            System.out.println(showName() + " has been defeated by " + opponent.showName());
+        }
+
     }
 }
